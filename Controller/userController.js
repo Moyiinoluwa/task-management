@@ -398,6 +398,7 @@ const createTask = asyncHandler(async(req, res) => {
         //required fields from request body
         const { title, description, deadline } = req.body;
         const { user_id } = req.user;
+        
         //create a new task
         const newTask = new Task({
             title,

@@ -1,9 +1,9 @@
-const express = require('express')
-const connectDb = require('./Config/connection')
-const dotenv = require('dotenv').config()
-const app = express()
-const morgan = require('morgan')
-const errorHandler = require('./Middleware/errorHandling')
+const express = require('express');
+const connectDb = require('./Config/connection');
+const dotenv = require('dotenv').config();
+const app = express();
+const morgan = require('morgan');
+const errorHandler = require('./Middleware/errorHandling');
 
 
 
@@ -29,4 +29,7 @@ const PORT = process.env.PORT || 8001
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
-})
+});
+
+
+ 
